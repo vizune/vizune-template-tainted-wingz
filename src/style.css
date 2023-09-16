@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --violet: #2f1647;
+  --navy: #293b93;
+  --stizza: #870b0c;
+  --dark: #111;
+  --stone: #3D4351;
+  --grey: #999;
+
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: #07080e;
+  color: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
