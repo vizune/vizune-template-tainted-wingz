@@ -6,15 +6,39 @@ import Sidebar from './components/Sidebar.vue'
 </script>
 
 <template>
-  <div class="flex">
-    <div>
+    <div class="SiteContainer">
       <Banner />
-      <h1>Welcome to Tainted Wings</h1>
-      <Categories />
+      <div class="Wrapper grid gap-4">
+        <div class="Wrapper-content">
+          <h1>⚜️<br /><span>Welcome to</span>Tainted Wings<br />✨</h1>
+          <h1>⚜️<br />Visitor<br />content<br />❣️</h1>
+          <h1>⚜️<br />Site<br />information<br />🎀</h1>
+          <Categories />
+        </div>
+        <div class="Wrapper-sidebar">
+          <Sidebar />
+        </div>
+      </div>
+        
+      
       <Footer />
     </div>
-    
-    <Sidebar />
-  </div>
 </template>
 
+<style scoped>
+.SiteContainer {
+  width: 100%;
+  max-width: 1436px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.Wrapper {
+  grid-template: "content sidebar" 
+}
+.Wrapper-content {
+  grid-area: "content";
+}
+.Wrapper-sidebar {
+  grid-area: "sidebar";
+}
+</style>

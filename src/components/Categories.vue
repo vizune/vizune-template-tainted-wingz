@@ -236,7 +236,10 @@ const categories = [
 </script>
 
 <template>
-    <div class="flex flex-wrap justify-center gap-4 mb-6" v-for="category in categories">
-        <Frame v-for="item in category.items" :asset="item.background" :name="item.name" :url="item.url" />
+    <div>
+        <div class="flex flex-wrap justify-center gap-4 mb-6" v-for="category in categories">
+            <Frame v-for="item in category.items" :asset="item.background" :name="item.name" :url="item.url" />
+        </div>
     </div>
+    
 </template>
