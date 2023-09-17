@@ -33,7 +33,7 @@ const props = defineProps({
     height: 236px;
 }
 .Frame-name {
-    width: 60%;
+    width: 65%;
     transition: transform .25s ease;
     transform-origin: center center;
     backface-visibility: hidden;

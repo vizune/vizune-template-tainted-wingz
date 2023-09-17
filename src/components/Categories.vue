@@ -141,6 +141,96 @@ const categories = [
                 url: '/pages/you/awards4u.php',
             }
         ]
+    },
+    {
+        title: 'Site',
+        items: [
+            {
+                background: '/backgrounds/23.jpg',
+                name: 'About',
+                url: '/pages/me/aboutTW.php',
+            },
+            {
+                background: '/backgrounds/24.jpg',
+                name: 'Gifts',
+                url: '/pages/me/gifted.php',
+            },
+            {
+                background: '/backgrounds/25.jpg',
+                name: 'Contact',
+                url: '/pages/me/email.php',
+            }
+        ]
+    },
+    {
+        title: 'Salya',
+        items: [
+            {
+                background: '/backgrounds/26.jpg',
+                name: 'About the owner',
+                url: '/pages/me/aboutme.php',
+            },
+            {
+                background: '/backgrounds/27.jpg',
+                name: 'Requests',
+                url: '/pages/me/requests.php',
+            },
+            {
+                background: '/backgrounds/28.jpg',
+                name: 'My collection',
+                url: '/pages/me/collecting.php',
+            },
+            {
+                background: '/backgrounds/29.jpg',
+                name: 'My Fantasy Loves',
+                url: '/pages/me/myfantasyloves.php',
+            }, 
+            {
+                background: '/backgrounds/30.jpg',
+                name: 'TOZ collectables',
+                url: '/pages/me/taintedonez.php',
+            }
+        ]
+    },
+    {
+        title: 'Sasha',
+        items: [
+            {
+                background: '/backgrounds/31.jpg',
+                name: 'About Sasha',
+                url: '/pages/me/sasha.php',
+            }
+        ]
+    },
+    {
+        title: 'From other sites',
+        items: [
+            {
+                background: '/backgrounds/32.jpg',
+                name: 'Adopted pets',
+                url: '/pages/me/apets.php',
+            },
+            {
+                background: '/backgrounds/33.jpg',
+                name: 'Adopted others',
+                url: '/pages/me/aothers.php',
+            },
+            {
+                background: '/backgrounds/34.jpg',
+                name: 'Joined fanlistings',
+                url: '/pages/me/joined.php',
+            },
+            {
+                background: '/backgrounds/35.jpg',
+                name: 'Awards won',
+                url: '/pages/me/awards.php',
+            }, 
+            {
+                background: '/backgrounds/36.jpg',
+                name: 'Bishies',
+                url: '/pages/me/bishis.php',
+            }
+        ]
     }
 ]
 </script>
