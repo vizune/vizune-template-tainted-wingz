@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <img src="/banner.jpg" role="presentation" style="margin: 0 -1rem 2.5rem;" />
+    <img src="/banner-long.jpg" role="presentation" />
 </template>

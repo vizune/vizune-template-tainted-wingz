@@ -91,7 +91,7 @@ const affiliates = [
 </script>
 
 <template>
-    <div class="Listing flex flex-wrap gap-4" style="width: 1000px;">
+    <div class="Listing flex flex-wrap gap-4">
         <Affiliate v-for="link in affiliates" :owner="link.owner" :name="link.name" :url="link.url" />
     </div>
 </template>

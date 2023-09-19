@@ -1,7 +1,7 @@
 <script setup>
 import Frame from './Frame.vue'
 
-const categories = [
+const visitor = [
     {
         title: 'Graphics',
         items: [
@@ -141,7 +141,10 @@ const categories = [
                 url: '/pages/you/awards4u.php',
             }
         ]
-    },
+    }
+]
+
+const site = [
     {
         title: 'Site',
         items: [
@@ -163,7 +166,7 @@ const categories = [
         ]
     },
     {
-        title: 'Salya',
+        title: 'Salya things',
         items: [
             {
                 background: '/backgrounds/26.jpg',
@@ -193,7 +196,7 @@ const categories = [
         ]
     },
     {
-        title: 'Sasha',
+        title: 'Sasha things',
         items: [
             {
                 background: '/backgrounds/31.jpg',
@@ -237,8 +240,24 @@ const categories = [
 
 <template>
     <div>
-        <div class="flex flex-wrap justify-center gap-4 mb-6" v-for="category in categories">
-            <Frame v-for="item in category.items" :asset="item.background" :name="item.name" :url="item.url" />
+        <h1>⚜️<br />Visitor<br />content<br />❣️</h1>
+        <div class="text-center mb-10">
+            <p>There are things I have for you. Click on the different pages and see what I did for you.<br />Oh one last thing, please read the <a href="/pages/tou.php">terms of use</a>.</p>
+            <p>Donates are greatly appreciated especially contributions to Holiday graphics.</p>
+        </div>
+        <div v-for="category in visitor">
+            <h2>{{ category.title }}</h2>
+            <div class="flex flex-wrap justify-center gap-4 my-6">
+                <Frame v-for="item in category.items" :asset="item.background" :name="item.name" :url="item.url" />
+            </div>
+        </div>
+
+        <h1>⚜️<br />Site<br />information<br />🎀</h1>
+        <div v-for="category in site">
+            <h2>{{ category.title }}</h2>
+            <div class="flex flex-wrap justify-center gap-4 my-6">
+                <Frame v-for="item in category.items" :asset="item.background" :name="item.name" :url="item.url" />
+            </div>
         </div>
     </div>
     
