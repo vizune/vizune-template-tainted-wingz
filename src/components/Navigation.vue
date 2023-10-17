@@ -34,7 +34,7 @@ const links = [
 </script>
 
 <template>
-    <ul>
+    <ul class="flex flex-wrap justify-center gap-4 p-0 list-none">
         <li v-for="link in links">
             <a :href="link.url" :class="{ active: link.active }">
                 {{ link.name }}
@@ -44,16 +44,6 @@ const links = [
 </template>
 
 <style scoped>
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.25rem .5rem;
-}
-
-ul > * + * {
-    margin-top: 1rem;
-}
-
 a {
     background: url('/nav-button.png') no-repeat;
     display: block;

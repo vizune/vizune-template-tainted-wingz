@@ -29,9 +29,10 @@ import Sidebar from './components/Sidebar.vue'
       <div class="Wrapper-sidebar">
         <Sidebar />
       </div>
-        
+      <div class="Wrapper-footer">
+        <Footer />
+      </div>
       
-      <Footer />
     </div>
   </div>
 </template>
@@ -43,19 +44,28 @@ import Sidebar from './components/Sidebar.vue'
   padding: 0 1rem;
   margin: 0 auto;
 }
-@media (min-width: 1024px) {
-  .Wrapper {
-    grid-template: "content sidebar";
-    grid-template-columns: 1fr 464px;
-  }
-}
 .Wrapper-content {
   grid-area: "content";
-  border-right: 1px solid white;
-  padding-top: 3rem;
+  margin-top: 5rem;
 }
 .Wrapper-sidebar {
   grid-area: "sidebar";
   padding-top: 3rem;
+}
+.Wrapper-footer {
+  grid-area: "footer";
+  grid-column-end: span 2;
+}
+@media (min-width: 1024px) {
+  .Wrapper {
+    grid-template: 
+      "content sidebar"
+      "footer footer";
+    grid-template-columns: 1fr 464px;
+    grid-template-rows: auto;
+  }
+  .Wrapper-content {
+    border-right: 1px solid white;
+  }
 }
 </style>

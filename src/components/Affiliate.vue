@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <a :href="url" target="_blank" :title="`${owner} @ ${name}`" class="Affiliate relative mb-6">
+    <a :href="url" target="_blank" :title="`${owner} @ ${name}`" class="Affiliate relative z-10">
         <span class="Affiliate-text text-sm text-center">{{ owner }}</span>
     </a>
 </template>
@@ -24,6 +24,11 @@ const props = defineProps({
 <style scoped>
 .Affiliate {
     width: 100px;
+    display: block;
+}
+
+.Affiliate:hover .Affiliate-text {
+    text-decoration: underline;
 }
 
 .Affiliate-text {

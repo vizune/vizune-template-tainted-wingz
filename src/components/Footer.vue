@@ -91,8 +91,26 @@ const affiliates = [
 </script>
 
 <template>
-    <div class="Listing flex flex-wrap gap-4">
-        <Affiliate v-for="link in affiliates" :owner="link.owner" :name="link.name" :url="link.url" />
+    <div class="flex gap-4 mb-8">
+        <div class="w-[175px] shrink-0 flex flex-col items-center justify-end">
+            <div class="flex justify-center flex-wrap mb-1">
+                <a href="http://exvius.aelysia.net" target="_blank" rel="noopener noreferrer">
+                    <img src="http://taintedwings.xyz/files/vii_aerith4.png">
+                </a>
+                <span class="text-xs">Aerith protects Tainted Wingz!</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-sm text-gold"><strong>Lost Souls Exchange</strong></span>
+                <iframe src="https://www.taintedwings.xyz/exchange/members.php" marginwidth="0" marginheight="0" scrolling="no" frameborder="1" height="50" width="100"></iframe>
+                <a href="https://www.taintedwings.xyz/exchange/lostsoulexchange.php" target="_blank" title="Join Us" class="text-sm">Join the Lost Souls</a>
+            </div>
+        </div>
+        <div class="py-6">
+            <h2 class="my-0 mx-7">Affiliates</h2>
+            <div class="Listing flex flex-wrap gap-4 mt-4">
+                <Affiliate v-for="link in affiliates" :owner="link.owner" :name="link.name" :url="link.url" />
+            </div>
+        </div>
     </div>
 </template>
 
