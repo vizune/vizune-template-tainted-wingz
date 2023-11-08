@@ -91,7 +91,7 @@ const affiliates = [
 </script>
 
 <template>
-    <div class="flex gap-4 mb-8">
+    <div class="flex flex-wrap lg:flex-nowrap justify-center gap-4 mb-8 mt-8 lg:mt-0">
         <div class="w-[175px] shrink-0 flex flex-col items-center justify-end">
             <div class="flex justify-center flex-wrap mb-1">
                 <a href="http://exvius.aelysia.net" target="_blank" rel="noopener noreferrer">
@@ -105,9 +105,9 @@ const affiliates = [
                 <a href="https://www.taintedwings.xyz/exchange/lostsoulexchange.php" target="_blank" title="Join Us" class="text-sm">Join the Lost Souls</a>
             </div>
         </div>
-        <div class="py-6">
+        <div class="py-6 flex flex-col items-center lg:items-start">
             <h2 class="my-0 mx-7">Affiliates</h2>
-            <div class="Listing flex flex-wrap gap-4 mt-4">
+            <div class="Listing flex flex-wrap gap-4 mt-4 justify-center lg:justify-start">
                 <Affiliate v-for="link in affiliates" :owner="link.owner" :name="link.name" :url="link.url" />
             </div>
         </div>
@@ -117,5 +117,6 @@ const affiliates = [
 <style scoped>
 .Listing * {
     margin-left: 3rem;
+    margin-right: 3rem;
 }
 </style>

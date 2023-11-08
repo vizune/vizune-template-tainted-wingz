@@ -10,7 +10,7 @@
   --stizza: #870b0c;
   --dark: #111;
   --stone: #3D4351;
-  --grey: #999;
+  --gold: #999;
 
   font-family: 'Roboto Slab', serif;
   line-height: 1.5;
@@ -87,4 +87,8 @@ ul {
   list-style: circle;
   padding-left:1rem;
   margin-bottom: 1rem;
+}
+
+strong {
+  color: #fe9b56;
 }

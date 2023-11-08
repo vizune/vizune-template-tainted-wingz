@@ -28,7 +28,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col justify-between">
+    <div class="Sidebar flex flex-col justify-between max-w-[465px] mx-auto">
         <img src="/sidebar-top.png" role="presentation" /> 
         <div class="my-2 mx-[1.3rem]">
             <Widget>
@@ -37,7 +37,7 @@
 
             <h2>Chatbox</h2>
             <Widget>
-                <div id="cboxdiv" style="position: relative; margin: 0 auto; width: 400px; font-size: 0; line-height: 0;">
+                <div id="cboxdiv" style="position: relative; margin: 0 auto; width: calc(100% - 2rem); font-size: 0; line-height: 0;">
                     <div style="position: relative; height: 200px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 0px solid;"><iframe src="https://www6.cbox.ws/box/?boxid=832058&amp;boxtag=XmylnA&amp;sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain6-832058" id="cboxmain6-832058"></iframe></div>
                     <div style="position: relative; height: 150px; overflow: hidden; border: 0px solid; border-top: 0px;"><iframe src="https://www6.cbox.ws/box/?boxid=832058&amp;boxtag=XmylnA&amp;sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform6-832058" id="cboxform6-832058"></iframe></div>
                 </div>
@@ -75,11 +75,8 @@
 </template>
 
 <style scoped>
-.Sidebar {
-    max-width: 465px;
-}
 
-h2 {
+.Sidebar h2 {
     background-color: #07080e;
     width: 100%;
     border-top: 15px solid #07080e;
